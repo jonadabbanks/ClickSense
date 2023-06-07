@@ -1,5 +1,5 @@
 
-![Logo](Img/logo.png)
+![Logo](Img/logo.ico)
 
 
 # ClickSense
