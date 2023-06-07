@@ -11,6 +11,8 @@ from PyQt5.QtCore import QTimer
 from PyQt5.QtCore import Qt, QRect
 import win32gui
 
+
+
 previous_window_name = ""
 start_time = datetime.now()  # Initialize start_time with current time
 
@@ -119,12 +121,29 @@ label = QLabel("Recording is inactive", window)
 label.setAlignment(Qt.AlignCenter)
 label.setGeometry(QRect(0, 0, 200, 50))  # Adjust the position and size of the label
 
+
+
+
+listener = mouse.Listener(on_click=on_click)
+listener.start()
+window.setStyleSheet("background-color: #c3e6cb;")  # Set border-radius to add rounded corners
+label.setText("Recording is active")
+print("Listener started.") #start recording once the app is started.
+
+
+
+
+
+
 # Create a keyboard listener to handle the shortcut
 keyboard_listener = keyboard.Listener(on_press=on_press)
+
+
 
 try:
     # Start the keyboard listener
     keyboard_listener.start()
+    
 
     # Start the PyQt5 application event loop
     sys.exit(app.exec_())
