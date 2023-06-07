@@ -19,9 +19,9 @@ ClickSense is a powerful software application that records and analyzes user act
 
 You can choose to install Clicksense using either the MSI installer or the EXE file:
 
-  [Download Msi Here](https://www.4sync.com/web/directDownload/gkEdgbgu/ugMOBc9H.aad1a773ad093447e71758acc4cd1455)
+  [Download Msi Here]()
 
-  [Download Exe Here](https://www.4sync.com/web/directDownload/8rX8r6YM/HedT-hU6.3558589b667a00b1bd24bb163296cdb3)
+  [Download Exe Here]()
 
 Alternatively, you can run the software directly by executing the main.py file. To do so, ensure you have the following requirements installed:
 
