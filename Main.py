@@ -116,6 +116,7 @@ window.setWindowFlag(Qt.Tool)
 window.setGeometry(100, 0, 200, 50)  # Adjust the window position and size
 window.setWindowFlag(Qt.FramelessWindowHint)  # Remove window frame
 window.setAttribute(Qt.WA_TranslucentBackground)  # Enable transparent background
+window.setWindowFlag(Qt.WindowStaysOnTopHint)  # Set the window to stay on top
 label = QLabel("Recording is inactive", window)
 label.setAlignment(Qt.AlignCenter)
 label.setGeometry(QRect(0, 0, 200, 50))  # Adjust the position and size of the label
