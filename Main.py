@@ -10,6 +10,7 @@ from PyQt5.QtWidgets import QApplication, QWidget, QLabel
 from PyQt5.QtCore import QTimer
 from PyQt5.QtCore import Qt, QRect
 import win32gui
+from PyQt5.QtGui import QPixmap
 
 
 
@@ -77,6 +78,7 @@ def on_press(key):
             listener = mouse.Listener(on_click=on_click)
             listener.start()
             window.setStyleSheet("background-color: #c3e6cb;")  # Set border-radius to add rounded corners
+            
             label.setText("Recording is active")
             print("Listener started.")
             window.show()  # Show the window when F7 key is pressed
@@ -120,6 +122,13 @@ window.setWindowFlag(Qt.WindowStaysOnTopHint)  # Set the window to stay on top
 label = QLabel("Recording is inactive", window)
 label.setAlignment(Qt.AlignCenter)
 label.setGeometry(QRect(0, 0, 200, 50))  # Adjust the position and size of the label
+
+
+# Create a QLabel for the logo
+logo_label = QLabel(window)
+logo_label.setGeometry(5, 5, 40, 40)  # Adjust the position and size of the logo
+logo_pixmap = QPixmap("img/logo.png")  # added the clicksense logo
+logo_label.setPixmap(logo_pixmap.scaled(40, 40, Qt.AspectRatioMode.KeepAspectRatio))
 
 
 
