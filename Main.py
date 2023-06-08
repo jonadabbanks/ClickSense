@@ -49,8 +49,6 @@ def get_element_name(x, y):
 
 
 
-
-
 def on_click(x, y, button, pressed):
     global previous_window_name, start_time
 
@@ -58,17 +56,18 @@ def on_click(x, y, button, pressed):
         window_name = get_window_name()
         current_time = datetime.now()
 
-        if window_name != previous_window_name:  # Compare with previous window name
-            if previous_window_name is not None:
+        if window_name != previous_window_name:
+            if previous_window_name:
                 duration = (current_time - start_time).total_seconds()
-                timestamp = current_time.strftime("%Y-%m-%d %H:%M:%S")
+                timestamp = current_time.strftime("%Y-%m-%d %I:%M:%S %p")
                 formatted_duration = format_duration(duration)
                 click_info = 'Window: {0}\nTime: {1}\nTotal Time Spent: {2}\n\n'.format(previous_window_name, timestamp, formatted_duration)
                 with open("clicks.txt", "a", encoding="utf-8") as file:
                     file.write(click_info)
 
             start_time = current_time
-            previous_window_name = window_name  # Update previous window name
+            previous_window_name = window_name
+
 
 def on_press(key):
     global listener, app, window, label
