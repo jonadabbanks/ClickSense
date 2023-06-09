@@ -20,7 +20,6 @@ We understand that customization is crucial when it comes to ClicksSense, as it 
 If you are interested in customizing ClicksSense and incorporating additional features, please contact me through the following platform:
 [LinkedIn](https://www.linkedin.com/in/jonadab-emeribe-35914b162/)
 
-[Email](jonadabbanks@gmail.com)
 
 ## Installation
 
