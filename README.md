@@ -14,6 +14,13 @@ ClickSense is a powerful software application that records and analyzes user act
 
 - Background Operation: ClickSense operates discreetly and efficiently in the background, ensuring minimal disruption to the user's workflow. It seamlessly integrates with the operating system, capturing mouse clicks and window information without impeding user productivity.
 
+## Customization
+We understand that customization is crucial when it comes to ClicksSense, as it allows individuals and organizations to tailor the software according to their specific requirements. We are committed to providing a seamless customization experience to meet your unique needs.
+
+If you are interested in customizing ClicksSense and incorporating additional features, please contact me through the following platform:
+[LinkedIn](https://www.linkedin.com/in/jonadab-emeribe-35914b162/)
+
+[Email](jonadabbanks@gmail.com)
 
 ## Installation
 
@@ -38,8 +45,6 @@ After installing ClickSense, the application will automatically initiate the rec
 Additionally, pressing the F8 key will instantly open Notepad, where you can access all the text-based recordings captured by ClickSense. This feature provides easy access to review and analyze the recorded data.
 
 Please note that these hotkey functionalities and the integration with Notepad make it convenient for users to control the recording process and access the recorded data seamlessly.
-
-
 
 
     
